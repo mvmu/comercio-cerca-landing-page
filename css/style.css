@@ -1,14 +1,188 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    text-align: center;
+    scroll-behavior: smooth;
+}
+
+.text-left {
+    text-align: left;
+}
 
 :root {
     /* colors */
     --main-color: #700FAA;
+    --main-color-dark: #2d0054;
     --color-secondary: #334E89;
     --color-secondary-gray: #5E5E5E;
+    --color-secondary-violet: #D3C4F9;
     --bg-white: #FAFBFF;
     --color-black: #1B1B1B;
     --color-secondary-lighgray: rgba(231, 235, 240, 1);
 }
 
+.custom-bg-white {
+    background-color: var(--bg-white);
+    border-radius: 0 0px 15px 15px;
+}
+
+.navbar-light .navbar-brand, .card-title{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+/* .navbar-brand: TO DO, MAKE IT */ 
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
+    color: var(--main-color-dark);
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: var(--color-secondary);
+}
+
+/* .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
+    color: var(--main-color);
+} */
+
+.text-main-color, .text-main-color i {
+    color: var(--main-color);
+}
+
+.bg-violet {
+    background: linear-gradient(45deg, var(--color-secondary), var(--main-color));
+}
+
+/* .text-color-purple-active {
+    color: var(--main-color);
+} */
+
+/* SECTIONS */
+
+section {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* HERO SECTION */
+
+#heroSection {
+    background-image: url(../assets/wallpaper2.svg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--bg-white);
+    padding: 10% 3%;
+    border-radius: 0 0 90px 90px;
+}
+
+.custom-button{
+    color: var(--main-color);
+    font-size: 1.7em;
+}
+
+.custom-button:hover{
+    color: var(--color-secondary);
+    transform: scale(1.1);
+    box-shadow: 3px 3px 60px var(--color-secondary-violet);
+}
+
+.custom-button:hover {
+    /* border: 3px solid var(--main-color); */
+    filter: drop-shadow(10px --main-color);
+}
+
+/* FEATURES SECTION */
+
+/* FeatureCard */
+
+#featuresCardsWrap {
+    gap: 3%;
+}
+
+.featureCard {
+    max-width: 350px;
+    text-align: center;
+}
+
+.featureCard img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.featureCard .card {
+    border: none;
+}
+
+/* ABOUT SECTION */
+
+#aboutSection {
+    color: var(--bg-white);
+}
+
+#aboutSection img {
+    width: 500px;
+}
+
+/* GALLERY SECTION */
+.galleryCard {
+    padding-bottom: 3%;
+}
+
+.galleryCard .card {
+    border-radius: 15px;
+    transition: transform .2s ease-in;
+}
+
+.galleryCard .card:hover {
+    box-shadow: 5px 5px 20px var(--color-secondary-violet);
+    transform: scale(1.07);
+}
+
+.galleryCard img {
+    object-fit: cover;
+    height: 250px;
+}
+
+/* CONTACT SECTION */
+
+#contactSection {
+    color: var(--bg-white);
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--main-color-dark);
+}
+footer hr.line-custom {
+    width: 60px;
+    height: 2px;
+    background-color: var(--main-color);
+}
 
 /* MEDIA QUERIES */
+/* adapt image for tablets */
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    #aboutSection img {
+        width: 400px;
+    }
+}
+
+/* preventing broken display on mobile */
+@media screen and (max-width: 1200px) {
+    #aboutSection {
+        overflow: hidden;
+    }
+}
+
+#aboutSection h5 {
+    line-height: 1.6em;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+    display: block;
+}
+
 
