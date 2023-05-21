@@ -26,14 +26,14 @@
     <div id="appNavbar" class="container-fluid pb-5">
       <nav class="navbar fixed-top navbar-expand-lg navbar-light custom-bg-white">
         <a class="navbar-brand" href="#">Comercio Cerca</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        <button id="hambButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#heroSection">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#featuresSection">What we do</a>
@@ -43,7 +43,7 @@
                 aria-haspopup="true" aria-expanded="false">
                 Digital transformation
               </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <ul class="dropdown-menu custom-bg-white" aria-labelledby="navbarDropdown">
                 <li>
                   <a class="dropdown-item" href="https://comerciocerca.com/pagina-web" target="_blank">Website service</a>
                 </li>
@@ -126,38 +126,44 @@
               </div>
             </div>
             <div id="featuresCardsWrap" class="row justify-content-center">
-              <div class="featureCard col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="assets/feature1.svg" alt="Card image cap" />
-                  <div class="card-body">
-                    <h4 class="card-title">Planning your strategy</h4>
-                    <h5 class="card-subtitle mb-2 text-muted">
-                      Get closer to the targets
-                    </h5>
-                  </div>
+                <div class="featureCard col-md-4">
+                  <a href="https://comerciocerca.com/qu%C3%A9-hacemos" target="_blank">
+                    <div class="card">
+                      <img class="card-img-top" src="assets/feature1.svg" alt="Strategy icon" />
+                      <div class="card-body">
+                        <h4 class="card-title">Planning your strategy</h4>
+                        <h5 class="card-subtitle mb-2 text-muted">
+                          Get closer to the targets
+                        </h5>
+                      </div>
+                    </div>
+                  </a>
                 </div>
+              <div class="featureCard col-md-4">
+                <a href="https://comerciocerca.com/qu%C3%A9-hacemos" target="_blank">
+                  <div class="card">
+                    <img class="card-img-top" src="assets/feature2.svg" alt="Develop business icon" />
+                    <div class="card-body">
+                      <h4 class="card-title">Develop your business</h4>
+                      <h5 class="card-subtitle mb-2 text-muted">
+                        Spreading passion
+                      </h5>
+                    </div>
+                  </div>
+                </a>
               </div>
               <div class="featureCard col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="assets/feature2.svg" alt="Card image cap" />
-                  <div class="card-body">
-                    <h4 class="card-title">Develop your business</h4>
-                    <h5 class="card-subtitle mb-2 text-muted">
-                      Spreading passion
-                    </h5>
+                <a href="https://comerciocerca.com/qu%C3%A9-hacemos" target="_blank">
+                  <div class="card">
+                    <img class="card-img-top" src="assets/feature3.svg" alt="Goals icon" />
+                    <div class="card-body">
+                      <h4 class="card-title">Reach your goals</h4>
+                      <h5 class="card-subtitle mb-2 text-muted">
+                        We share the purposes
+                      </h5>
+                    </div>
                   </div>
-                </div>
-              </div>
-              <div class="featureCard col-md-4">
-                <div class="card">
-                  <img class="card-img-top" src="assets/feature3.svg" alt="Card image cap" />
-                  <div class="card-body">
-                    <h4 class="card-title">Reach your goals</h4>
-                    <h5 class="card-subtitle mb-2 text-muted">
-                      We share the purposes
-                    </h5>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -229,7 +235,7 @@
                   <div class="galleryCard col-md-4">
                     <a class="nav-link" href="https://comerciocerca.com/pagina-web" target="_blank">
                       <div class="card">
-                        <img class="card-img-top" src="assets/gallery1.webp" alt="Card image cap" />
+                        <img class="card-img-top" src="assets/gallery1.webp" alt="website services" />
                         <div class="card-body">
                           <h4 class="card-title">Website service</h4>
                           <h5 class="card-subtitle mb-2 text-muted">
@@ -242,7 +248,7 @@
                   <div class="galleryCard col-md-4">
                     <a class="nav-link" href="https://comerciocerca.com/presencia-redes-sociales" target="_blank">
                       <div class="card">
-                        <img class="card-img-top" src="assets/gallery2.webp" alt="Card image cap" />
+                        <img class="card-img-top" src="assets/gallery2.webp" alt="social media services" />
                         <div class="card-body">
                           <h4 class="card-title">Social Media</h4>
                           <h5 class="card-subtitle mb-2 text-muted">
@@ -256,7 +262,7 @@
                   <div class="galleryCard col-md-4">
                     <a class="nav-link" href="https://comerciocerca.com/gestion-de-clientes" target="_blank">
                       <div class="card">
-                        <img class="card-img-top" src="assets/gallery3.webp" alt="Card image cap" />
+                        <img class="card-img-top" src="assets/gallery3.webp" alt="client management services" />
                         <div class="card-body">
                           <h4 class="card-title">Client Management</h4>
                           <h5 class="card-subtitle mb-2 text-muted">
@@ -269,7 +275,7 @@
                   <div class="galleryCard col-md-4">
                     <a class="nav-link" href="https://comerciocerca.com/e-commerce" target="_blank">
                       <div class="card">
-                        <img class="card-img-top" src="assets/gallery4.webp" alt="Card image cap" />
+                        <img class="card-img-top" src="assets/gallery4.webp" alt="e-Commerce services" />
                         <div class="card-body">
                           <h4 class="card-title">e-Commerce</h4>
                           <h5 class="card-subtitle mb-2 text-muted">
@@ -282,7 +288,7 @@
                   <div class="galleryCard col-md-4">
                     <a class="nav-link" href="https://comerciocerca.com/marketplace" target="_blank">
                       <div class="card">
-                        <img class="card-img-top" src="assets/gallery5.webp" alt="Card image cap" />
+                        <img class="card-img-top" src="assets/gallery5.webp" alt="marketplace services" />
                         <div class="card-body">
                           <h4 class="card-title">Marketplace</h4>
                           <h5 class="card-subtitle mb-2 text-muted">
@@ -295,7 +301,7 @@
                   <div class="galleryCard col-md-4">
                     <a class="nav-link" href="https://comerciocerca.com/presencia-avanzada" target="_blank">
                       <div class="card">
-                        <img class="card-img-top" src="assets/gallery6.webp" alt="Card image cap" />
+                        <img class="card-img-top" src="assets/gallery6.webp" alt="SEO & SEM services" />
                         <div class="card-body">
                           <h4 class="card-title">SEO & SEM</h4>
                           <h5 class="card-subtitle mb-2 text-muted">
@@ -340,13 +346,13 @@
             <a href="https://www.facebook.com/ComercioCerca/" target="_blank" class="me-4">
               <i class="bi bi-facebook"></i>
             </a>
-            <a href="" class="me-4">
+            <a href="https://twitter.com/comerciocerca" class="me-4">
               <i class="bi bi-twitter"></i>
             </a>
-            <a href="" class="me-4">
+            <a href="https://www.instagram.com/comerciocerca/" class="me-4">
               <i class="bi bi-instagram"></i>
             </a>
-            <a href="" class="me-4">
+            <a href="https://www.linkedin.com/company/comerciocerca/" class="me-4">
               <i class="bi bi-linkedin"></i>
             </a>
           </div>
@@ -379,7 +385,7 @@
                 <hr class="mb-4 mt-0 d-inline-block mx-auto line-custom"/>
                 <div class="text-left">
                   <p><i class="bi bi-geo-alt mr-3"></i> Av. de las Provincias, 33. Fuenlabrada</p>
-                  <p><i class="bi bi-envelope mr-3"></i> hola@comerciocerca.com</p>
+                  <a href="mailto:hola@comerciocerca.com"><p><i class="bi bi-envelope mr-3"></i>hola@comerciocerca.com</p></a>
                   <p><i class="bi bi-phone mr-3"></i> 91 122 38 59</p>
                 </div>
               </div>
@@ -406,6 +412,28 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
+  <script>
+    const links = document.querySelectorAll(".nav-link");
+
+    // Add a specific class to the active/non active links
+    links.forEach(link => {
+      link.addEventListener("click", function() {
+        // remove active class in every element/link
+        links.forEach(l => {
+          l.classList.remove("navActive");
+        });
+        // add active class to selected element/link
+        link.classList.toggle("navActive");
+      });
+    });
+
+    function removeOthersActiveLink(links) {
+      links.forEach(link => {
+        link.classList.remove("navActive");
+      });
+    }
+
+  </script>
 </body>
 
 </html>

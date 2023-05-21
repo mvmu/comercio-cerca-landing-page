@@ -16,48 +16,60 @@ body {
     --main-color: #700FAA;
     --main-color-dark: #2d0054;
     --color-secondary: #334E89;
-    --color-secondary-gray: #5E5E5E;
     --color-secondary-violet: #D3C4F9;
     --bg-white: #FAFBFF;
-    --color-black: #1B1B1B;
-    --color-secondary-lighgray: rgba(231, 235, 240, 1);
 }
 
+/* custom background to nav and social media div */
 .custom-bg-white {
     background-color: var(--bg-white);
     border-radius: 0 0px 15px 15px;
+    border: none;
+    filter: drop-shadow(3px 3px 20px var(--main-color-dark));
 }
+
+/* NAVBAR AND BUTTONS GENERAL SETTINGS */
 
 .navbar-light .navbar-brand, .card-title{
     color: var(--main-color);
     font-weight: 600;
 }
 
-/* .navbar-brand: TO DO, MAKE IT */ 
+#hambButton:focus,
+#hambButton:active,
+#hambButton:focus {
+    outline: 2px solid var(--main-color);
+}
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link, .navbar-light .navbar-nav .nav-link, .dropdown-item {
     color: var(--main-color-dark);
 }
 
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover, .dropdown-item:hover {
     color: var(--color-secondary);
 }
 
-/* .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:active {
-    color: var(--main-color);
-} */
+/* SM icons */
 
 .text-main-color, .text-main-color i {
     color: var(--main-color);
 }
 
+/* background setting */
 .bg-violet {
     background: linear-gradient(45deg, var(--color-secondary), var(--main-color));
 }
 
-/* .text-color-purple-active {
+/* setting to color the active links(current page)*/
+.navActive {
     color: var(--main-color);
-} */
+    font-weight: 600;
+} 
+
+/* h2 section title color */
+section:nth-child(even) h2 {
+    color: var(--main-color);
+}
 
 /* SECTIONS */
 
@@ -116,6 +128,10 @@ section {
     border: none;
 }
 
+.featureCard a:hover {
+    text-decoration: none;
+}
+
 /* ABOUT SECTION */
 
 #aboutSection {
@@ -126,12 +142,17 @@ section {
     width: 500px;
 }
 
-/* GALLERY SECTION */
+/* GALLERY SECTION (and a little config of FEATURES SECTION > cards hovering*/
 .galleryCard {
     padding-bottom: 3%;
 }
 
-.galleryCard .card {
+.galleryCard img {
+    object-fit: cover;
+    height: 250px;
+}
+
+.galleryCard .card, .featureCard a .img  {
     border-radius: 15px;
     transition: transform .2s ease-in;
 }
@@ -141,9 +162,8 @@ section {
     transform: scale(1.07);
 }
 
-.galleryCard img {
-    object-fit: cover;
-    height: 250px;
+.featureCard a img:hover {
+    transform: scale(1.1);
 }
 
 /* CONTACT SECTION */
@@ -162,8 +182,12 @@ footer hr.line-custom {
     background-color: var(--main-color);
 }
 
+footer div:nth-child(3) a {
+    color: white;
+}
+
 /* MEDIA QUERIES */
-/* adapt image for tablets */
+/* adapt about section mockup/image for tablets */
 @media screen and (min-width: 768px) and (max-width: 1200px) {
     #aboutSection img {
         width: 400px;
