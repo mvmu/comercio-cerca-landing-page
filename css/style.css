@@ -179,6 +179,11 @@ section {
 footer {
     background-color: var(--main-color-dark);
 }
+
+footer #socialMediaLinks a {
+    text-decoration: none;
+}
+
 footer hr.line-custom {
     width: 60px;
     height: 2px;
