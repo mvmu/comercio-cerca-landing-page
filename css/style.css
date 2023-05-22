@@ -28,7 +28,7 @@ body {
 }
 
 .navbar {
-    filter: drop-shadow(3px 3px 20px var(--main-color-dark));
+    filter: drop-shadow(0px -4px 11px var(--main-color-dark));
 }
 
 /* NAVBAR AND BUTTONS GENERAL SETTINGS */
